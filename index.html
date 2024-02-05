@@ -1,92 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Meet a Geek</title>
-	<style>
-		body
-		{
-			margin: 0px;
-			padding: 0px;
-		}
-		#container
-		{
-			height: 680px;
-		}
-		#nav
-		{
-			background-color: aliceblue; 
-			height: 25%;
-		}
-		#left
-		{
-			background-color: darkred; height: 50%; float: left; width: 50%;
-
-		}
-
-		#right
-		{
-			background-color: green; height: 50%;
-
-		}
-
-		#footer
-		{
-			background-color: yellow;
-			height: 25%;
-		}
-
-		ul{
-			list-style-type: none;
-			padding: 0px;
-		  	margin: 0px;
-		  	width: 100px;
-		  	background-color: #f1f1f1;
-		  }
-		  li a{
-		  	display: block;
-		  	color: #000;
-  			padding: 8px 16px;
-			text-decoration: none
-					  	
-		  }
-		  li a:hover {
- 				 background-color: #555;
-				 color: white;
-		  }
-		li a.active {
-  		background-color: #04AA6D;
-  		color: white;
-		}
-
-		li a:hover:not(.active) {
-		  background-color: #555;
-		  color: white;
-		}	
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/app.js"></script>
 </head>
-<body style="margin: 0px;padding: 0px;">
-<div  id="container">
-	<div id="nav">
-		<ul>
-		  <li><a href="default.asp" class="active">Home</a></li>
-		  <li><a href="news.asp">News</a></li>
-		  <li><a href="contact.asp">Contact</a></li>
-		  <li><a href="about.asp">About</a></li>
-		</ul>
-	</div>
-	<div id="left">
-		Left
-	</div>
-	<div id="right">
-		right
-	</div>
-	<div id="footer">
-		footer
-	</div>
-</div>
 
+<body>
+  <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#about">Scarlett Johansson</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarId"
+        aria-controls="navbarId" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars hamburger"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarId">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services-id" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Client</a>
+          </li>
+          <li class="nav-item">
+            <a href="#exp-id" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hire-id" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="home">
+    <div class="container-fluid header-content">
+      <div class="row">
+        <div class="col text-center">
+          <div class="content-box">
+            <h4>Welcome</h4>
+            <h1>I'M <span class="element"></span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nobis soluta tempora minima, assumenda
+              repellendus?</p>
+            <a href="#" class="btn">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="about r-p" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="image/profile.jpg" class="img-fluid img-thumbnail" alt="profile">
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0">
+          <h2>About Me</h2>
+          <h4>Hello! <span style="color: #E96F85;"></span>I'M Scarlett Johansson</h4>
+          <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolores quia tempore fugiat magni illo
+              alias deserunt nemo porro numquam temporibus sit repudiandae reprehenderit, dignissimos aperiam hic et
+              earum dolorem!</span></p>
+          <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolores quia tempore fugiat magni illo
+              alias deserunt nemo porro numquam temporibus sit repudiandae reprehenderit, dignissimos aperiam hic et
+              earum dolorem!</span></p>
+          <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolores quia tempore fugiat magni illo
+              alias deserunt nemo porro numquam temporibus sit repudiandae reprehenderit, dignissimos aperiam hic et
+              earum dolorem!</span></p>
+          <div>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="exp-class" id="exp-id">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6  d-flex justify-content-center align-items-center">
+          <h3>My Skills</h3>
+        </div>
+        <div class="col-md-6">
+          <label for="">Html</label>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">95%</div>
+          </div>
+          <label for="">CSS</label>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">81%</div>
+          </div>
+          <label for="">jQuery</label>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">63%</div>
+          </div>
+          <label for="">Java</label>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">54%</div>
+          </div>
+          <label for="">MySql</label>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">70%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services-class bg-sec r-p" id="services-id">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="col">
+            <h2>My Services</h2>
+            <p>What we offer to our Clients.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="fab fa-apple"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">App Development</h5>
+              <div class="service-border"></div>
+              <p class="card-text">App development is must for any buisness to thrive in today's world. We provide
+                excelent mobile solutions to our esteemed clients.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="fab fa-opencart"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce Solutions</h5>
+              <div class="service-border"></div>
+              <p class="card-text">E-Commerce Web Development. E-Commerce web development is must for any retailors who
+                are looking for expansion of there market and customer reach.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Website Development</h5>
+              <div class="service-border"></div>
+              <p class="card-text">
+                Website Development. We create websites according to your requirement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="far fa-edit"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Seo Services</h5>
+              <div class="service-border"></div>
+              <p class="card-text">We offer a full suite of enterprise-level SEO services. We help eliminate SEO
+                complexity and generate more revenue.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="fab fa-wordpress-simple"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Wordpress</h5>
+              <div class="service-border"></div>
+              <p class="card-text">WordPress is a web content management system. It was originally created as a tool to
+                publish blogs but has evolved to support publishing other web content, including more traditional
+                websites, mailing lists and Internet forum, media galleries, membership sites, learning management
+                systems and online stores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="fab fa-joomla"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Joomla Website Development</h5>
+              <div class="service-border"></div>
+              <p class="card-text">
+                Joomla Website Development. Website Development. We create websites according to your requirement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hire-me r-p text-center" id="hire-id">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="md-4">
+            I am Available for Freelance
+          </h3>
+          <a href="#" class="btn r-btn">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
